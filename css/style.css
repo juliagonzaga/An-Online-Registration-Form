@@ -418,6 +418,7 @@ body {
 }
 
 .page-container {
+  color: #2d3945;
   padding: 0 16px;
 }
 
@@ -437,10 +438,10 @@ body {
 }
 
 .heading {
+  padding: 0;
   margin: 0;
   font-size: 1.2em;
   font-weight: 900;
-  color: #2d3945;
 }
 
 .intro {
@@ -451,7 +452,7 @@ body {
   color: #808080;
 }
 
-.container {
+.container-primary {
   padding: 0;
   margin: 0;
   border-top: 2px solid;
@@ -460,10 +461,12 @@ body {
   border-right: none;
 }
 
-.contact-wrapper {
+.contact-wrapper,
+.news-wrapper {
   display: flex;
   flex-flow: column wrap;
-  padding: 16px 0;
+  padding-top: 24px;
+  padding-bottom: 32px;
   text-align: left;
 }
 
@@ -489,9 +492,21 @@ body {
 .contact-label {
   padding-top: 16px;
   padding-bottom: 8px;
-  font-size: 0.9em;
+  font-size: 0.85em;
   font-weight: 300;
-  color: #2d3945;
+}
+
+.container-secondary {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.news-label {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding-top: 20px;
+  padding-bottom: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,6 +12,7 @@ body {
 }
 
 .page-container {
+    color: $color-primary;
     padding: 0 16px;
 }
 
@@ -31,10 +32,10 @@ body {
 }
 
 .heading {
+    padding: 0;
     margin: 0;
     font-size: 1.2em;
     font-weight: 900;
-    color: $color-primary;
 }
 
 .intro {
@@ -45,8 +46,8 @@ body {
     color: $color-grey;
 }
 
-.container {
-    padding: 0;
+.container-primary {
+    padding:0;
     margin: 0;
     border-top: 2px solid;
     border-left: none;
@@ -54,12 +55,13 @@ body {
     border-right: none;
 }
 
-.contact-wrapper {
+.contact-wrapper,
+.news-wrapper {
     display: flex;
     flex-flow: column wrap;
-    padding: 16px 0;
+    padding-top: 24px;
+    padding-bottom: 32px;
     text-align: left;
-
 }
 
 .box {
@@ -86,7 +88,19 @@ body {
 .contact-label {
     padding-top: 16px;
     padding-bottom: 8px;
-    font-size: .9em;
+    font-size: .85em;
     font-weight: 300;
-    color: $color-primary;
+}
+
+.container-secondary {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.news-label {
+    font-size: .9em;
+    line-height: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 12px;
 }
