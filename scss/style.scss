@@ -8,17 +8,17 @@
 
 body {
     font: 1em 'Merriweather', serif;
-    text-align: center;
 }
 
 .page-container {
-    color: $color-primary;
     padding: 0 16px;
+    color: $color-primary;
 }
 
-.page-header {
+.main-header {
     padding: 24px;
     margin: 0;
+    text-align: center;
     font-size: 1.1em;
     font-weight: 700;
     color: $color-white;
@@ -28,6 +28,7 @@ body {
 .overview {
     padding: 28px 0;
     margin-bottom: 2px;
+    text-align: center;
     border-bottom: 4px solid $color-primary;
 }
 
@@ -46,8 +47,8 @@ body {
     color: $color-base;
 }
 
-.container-primary {
-    padding:0;
+.contact-wrapper {
+    padding: 28px 0;
     margin: 0;
     border-top: 2px solid;
     border-left: none;
@@ -55,16 +56,29 @@ body {
     border-right: none;
 }
 
-.contact-wrapper,
-.news-wrapper {
+.container {
     display: flex;
     flex-flow: column wrap;
-    padding-top: 24px;
-    padding-bottom: 32px;
-    text-align: left;
 }
 
-.box {
+.contact-info {
+    display: flex;
+    flex-flow: column wrap;
+
+    &:last-child {
+        > input {
+        width: 160px;
+        }
+    }
+}
+
+.contact-label {
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-size: .85em;
+}
+
+.field {
     width: 100%;
     height: 50px;
     padding: 16px;
@@ -80,40 +94,21 @@ body {
         color: $grey-light;
         text-align: right;
     }
-
-    &:last-child {
-        width: 50%;
-    }
 }
 
-.contact-label {
-    padding-top: 16px;
-    padding-bottom: 8px;
-    font-size: .85em;
-}
-
-.container-secondary {
-    padding: 0;
+.news-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 24px 0 32px 0;
     margin: 0;
     border: none;
 }
 
 .news-label {
-    font-size: .9em;
-    line-height: 1.5em;
     padding-top: 20px;
     padding-bottom: 12px;
-}
-
-.btn {
-    height: 60px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    font-weight: 700;
-    color: $color-white;
-    background-color: $color-accent;
+    font-size: .9em;
+    line-height: 1.5em;
 }
 
 .checkboxes,
@@ -128,13 +123,26 @@ body {
 
 .textarea {
     height: 100px;
+    width: 100%;
     border: none;
     border-radius: 5px;
     background-color: $color-solitude;
 }
 
+.btn {
+    height: 60px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: $color-white;
+    background-color: $color-accent;
+    border: none;
+    border-radius: 5px;
+}
+
 footer {
     padding: 24px;
+    text-align: center;
     font-size: .8em;
     font-style: italic;
     font-weight: 400;
@@ -146,5 +154,29 @@ footer {
         width: 768px;
         margin: auto;
     }
-    
+
+    .overview {   
+        padding-top: 52px;
+        padding-bottom: 32px;
+    }
+
+    .form-heading {
+        padding-top: 16px;
+        padding-bottom: 12px;
+        font-size: 1.1em;
+    }
+
+    .contact-info {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 8px 0;
+
+        > label {
+            flex: 1;
+        }
+
+        > .field {
+            flex: 2.5;
+        }
+    }
 }
