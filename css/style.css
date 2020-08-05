@@ -570,15 +570,17 @@ footer {
   }
 
   .contact-info {
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: row nowrap;
     margin: 8px 0;
   }
   .contact-info > label {
-    flex: 1;
+    flex-basis: 25%;
   }
   .contact-info__input-field {
-    flex: 2.5;
+    flex-basis: 70%;
+  }
+  .contact-info #zip {
+    max-width: 25%;
   }
 }
 

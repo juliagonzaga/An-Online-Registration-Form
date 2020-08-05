@@ -171,16 +171,19 @@ footer {
     }
 
     .contact-info {
-        flex-flow: row wrap;
-        justify-content: space-between;
+        flex-flow: row nowrap;
         margin: 8px 0;
 
         > label {
-            flex: 1;
+            flex-basis: 25%;
         }
 
         &__input-field {
-            flex: 2.5;
+            flex-basis: 70%;
+        }
+
+        #zip {
+            max-width: 25%;
         }
     }
 }
