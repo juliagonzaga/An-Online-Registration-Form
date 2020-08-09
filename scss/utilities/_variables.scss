@@ -1,10 +1,6 @@
 $color-primary: #2d3945; //dark blue
-$color-secondary: #489ef9; //police strobe
-$color-accent: #4ebbb5; //cyan
-
+$color-accent: #52bab3; //aquagreen
 $color-white: #fff; 
 $color-solitude: #eff0f1; 
-
-
-$color-base: #808080;//grey
-$grey-light: lighten($color-base, 25%);
+$color-grey: #808080;
+$grey-light: lighten($color-grey, 25%);
