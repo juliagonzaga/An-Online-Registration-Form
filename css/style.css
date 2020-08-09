@@ -448,17 +448,17 @@ body {
   font-weight: 900;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .overview__heading {
+    font-size: 1.5em;
+  }
+}
 .overview__intro {
   font-size: 0.9em;
   font-weight: 300;
   padding: 8px 0;
   margin: 0;
   color: #808080;
-}
-@media (min-width: 768px) {
-  .overview__intro {
-    font-size: 0.7em;
-  }
 }
 
 .contact-wrapper {
@@ -479,11 +479,6 @@ body {
   font-size: 1.1em;
   font-weight: 900;
 }
-@media (min-width: 768px) {
-  .contact-form__heading {
-    font-size: 0.9em;
-  }
-}
 
 .contact-info {
   display: flex;
@@ -495,6 +490,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
     margin: 8px 0;
   }
 }
@@ -506,6 +502,7 @@ body {
 @media (min-width: 768px) {
   .contact-info__label {
     flex-basis: 30%;
+    padding: 0;
   }
 }
 .contact-info > #zip {
