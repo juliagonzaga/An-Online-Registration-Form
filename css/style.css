@@ -1,3 +1,33 @@
+.contact-wrapper,
+.news-wrapper {
+  padding: 0;
+  padding-bottom: 28px;
+  margin: 0;
+  border: none;
+}
+
+.contact-wrapper__heading,
+.news-wrapper__heading {
+  font-size: 1.1em;
+  font-weight: 900;
+  width: 100%;
+  padding-top: 28px;
+  border-top: 2px solid;
+  text-align: left;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .contact-wrapper__heading,
+.news-wrapper__heading {
+    padding-top: 44px;
+  }
+}
+
+.textarea:focus, .contact-info__input-field:focus {
+  outline: none;
+  border-bottom: 3px #52bab3 solid;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -424,49 +454,8 @@ body {
 @media (min-width: 768px) {
   .page-container {
     max-width: 60%;
-    padding-top: 24px;
     margin: auto;
   }
-}
-
-.main-header {
-  font-size: 1.1em;
-  font-weight: 700;
-  padding: 24px;
-  margin: 0;
-  color: #fff;
-  background-color: #2d3945;
-}
-
-.overview {
-  padding: 28px 0;
-  margin-bottom: 2px;
-  border-bottom: 4px solid #2d3945;
-}
-.overview__heading {
-  font-size: 1.1em;
-  font-weight: 900;
-  margin: 0;
-}
-@media (min-width: 768px) {
-  .overview__heading {
-    font-size: 1.5em;
-  }
-}
-.overview__intro {
-  font-size: 0.9em;
-  font-weight: 300;
-  padding: 8px 0;
-  margin: 0;
-  color: #808080;
-}
-
-.contact-wrapper {
-  padding: 28px 0;
-  margin: 0;
-  border: 2px solid;
-  border-left: none;
-  border-right: none;
 }
 
 .contact-form {
@@ -475,9 +464,23 @@ body {
   flex-wrap: wrap;
   text-align: left;
 }
-.contact-form__heading {
-  font-size: 1.1em;
-  font-weight: 900;
+@media (min-width: 768px) {
+  .contact-form {
+    padding: 16px 0;
+  }
+}
+
+.news-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.news-form__label {
+  padding-top: 20px;
+  padding-bottom: 12px;
+  line-height: 1.5em;
+  font-size: 0.9em;
 }
 
 .contact-info {
@@ -510,12 +513,12 @@ body {
 }
 
 .contact-info__input-field {
-  font-size: 0.9em;
-  height: 50px;
-  padding: 12px;
   background-color: #eff0f1;
   border: none;
   border-radius: 5px;
+  font-size: 0.9em;
+  height: 50px;
+  padding: 12px;
 }
 @media (min-width: 768px) {
   .contact-info__input-field {
@@ -529,9 +532,93 @@ body {
   color: silver;
   text-align: right;
 }
-.contact-info__input-field:focus {
-  outline: none;
-  border-bottom: 3px #52bab3 solid;
+
+.textarea {
+  background-color: #eff0f1;
+  border: none;
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+}
+
+.main-header {
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 24px;
+  margin: 0;
+  color: #fff;
+  background-color: #2d3945;
+}
+
+.overview {
+  padding: 28px 0;
+  margin-bottom: 2px;
+  border-bottom: 4px solid #2d3945;
+}
+@media (min-width: 768px) {
+  .overview {
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+}
+.overview__heading {
+  font-size: 1.1em;
+  font-weight: 900;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .overview__heading {
+    font-size: 1.5em;
+  }
+}
+.overview__intro {
+  font-size: 0.9em;
+  font-weight: 300;
+  padding: 8px 0;
+  margin: 0;
+  color: #808080;
+}
+
+footer {
+  font-size: 0.8em;
+  font-weight: 400;
+  font-style: italic;
+  padding: 24px;
+  color: silver;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 36px;
+  }
+}
+
+.btn {
+  font-size: 1.1em;
+  font-weight: 700;
+  height: 60px;
+  width: 100%;
+  color: #fff;
+  background-color: #52bab3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.checkboxes,
+.radios {
+  font-size: 0.9em;
+  line-height: 2.2em;
+}
+.checkboxes > label,
+.radios > label {
+  padding-left: 8px;
+}
+.checkboxes > input:checked + label,
+.radios > input:checked + label {
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=style.css.map */

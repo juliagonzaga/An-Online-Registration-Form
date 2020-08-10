@@ -23,9 +23,9 @@
             <div>
                 <form action="index.html" method="post">
                     <fieldset class="contact-wrapper">
-                        <div class="contact-form">
-                            <legend class="contact-form__heading">Contact Information</legend>
+                        <legend class="contact-wrapper__heading">Contact Information</legend>
                             
+                        <div class="contact-form">
                             <div class="contact-info">
                                 <label for="name" class="contact-info__label">Full Name</label>
                                 <input type="text" class="contact-info__input-field" id="name" name="user_fullName" placeholder="Required">
@@ -54,7 +54,7 @@
                             <div class="contact-info">
                                 <label for="state" class="contact-info__label">State</label>
                                 <select name="user_state" class="contact-info__input-field" id="state">
-                                    <option value="Choose State">Choose State</option>
+                                    <option value="Choose State" disabled selected>Choose State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
@@ -117,35 +117,35 @@
                     </fieldset>
 
                     <fieldset class="news-wrapper">
+                        <legend class="news-wrapper__heading">Newsletter</legend>
+
                         <div class="news-form">
-                            <legend class="news-form__heading">Newsletter</legend>
+                            <label class="news-form__label">Select the newsletters you would like to receive</label>
+
+                            <div class="checkboxes">
+                                <input type="checkbox" id="html" value="html-news" name="newsletter">
+                                <label for="html">HTML News</label> <br>
+
+                                <input type="checkbox" id="css" value="css-news" name="newsletter">
+                                <label for="css">CSS News</label> <br>
+
+                                <input type="checkbox" id="js" value="js-news" name="newsletter">
+                                <label for="js">Javascript News</label> <br>
+                            </div>
+
+                            <label class="news-form__label">Newsletter format</label>
+
+                            <div class="radios">
+                                <input type="radio" id="html-format" value="html-format" name="newsletter-format">
+                                <label for="html-format">HTML</label> <br>
+
+                                <input type="radio" id="plain-format" value="plaintext-format" name="newsletter-format">
+                                <label for="plain-format">Plain text</label> <br>
+                            </div>
+
+                            <label class="news-form__label">Other topics you'd like to hear about</label>
+                            <textarea name="other-topics" class="textarea" id="topics"></textarea>
                         </div>
-                        
-                        <label class="news-form__label">Select the newsletters you would like to receive</label>
-
-                        <div class="checkboxes">
-                            <input type="checkbox" id="html" value="html-news" name="newsletter">
-                            <label for="html">HTML News</label> <br>
-
-                            <input type="checkbox" id="css" value="css-news" name="newsletter">
-                            <label for="css">CSS News</label> <br>
-
-                            <input type="checkbox" id="js" value="js-news" name="newsletter">
-                            <label for="js">Javascript News</label> <br>
-                        </div>
-
-                        <label class="news-label">Newsletter format</label>
-
-                        <div class="radios">
-                            <input type="radio" id="html-format" value="html-format" name="newsletter-format">
-                            <label for="html-format">HTML</label> <br>
-
-                            <input type="radio" id="plain-format" value="plaintext-format" name="newsletter-format">
-                            <label for="plain-format">Plain text</label> <br>
-                        </div>
-
-                        <label class="news-label">Other topics you'd like to hear about</label>
-                        <textarea name="other-topics" class="textarea" id="topics"></textarea>
                     </fieldset>
 
                     <div>

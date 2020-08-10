@@ -1,0 +1,10 @@
+footer {
+    @include fontStyle (.8em, 400, italic);
+
+    padding: 24px;
+    color: $grey-light;
+
+    @media (min-width: 768px) {
+        padding: 36px;
+    }
+}

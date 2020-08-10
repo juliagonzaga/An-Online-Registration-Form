@@ -1,0 +1,37 @@
+.main-header {
+    @include fontStyle (1.1em, 700);
+
+    padding: 24px;
+    margin: 0;
+    color: $color-white;
+    background-color: $color-primary;
+}
+
+.overview {
+    padding: 28px 0;
+    margin-bottom: 2px;
+    border-bottom: 4px solid $color-primary;
+
+    @media (min-width: 768px){
+        padding-top: 56px;
+        padding-bottom: 40px;
+    }
+
+    &__heading {
+        @include fontStyle (1.1em, 900);
+
+        margin: 0;
+
+        @media (min-width: 768px) {
+            @include fontStyle (1.5em);
+        }
+    }
+
+    &__intro {
+        @include fontStyle (.9em, 300);
+
+        padding: 8px 0;
+        margin: 0;
+        color: $color-grey;
+    }
+}

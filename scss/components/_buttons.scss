@@ -1,0 +1,29 @@
+.btn {
+    @include fontStyle (1.1em, 700);
+
+    height: 60px;
+    width: 100%;
+    color: $color-white;
+    background-color: $color-accent;
+    border: none;
+    border-radius: $round;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .80;
+    }
+}
+
+.checkboxes,
+.radios {
+    @include fontStyle (.9em);
+    line-height: 2.2em;
+
+    > label {
+        padding-left: 8px;
+    }
+
+    & > input:checked + label {
+        @include fontStyle ($weight: 900);
+    }
+}
