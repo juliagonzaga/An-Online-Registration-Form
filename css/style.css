@@ -516,6 +516,7 @@ body {
   background-color: #eff0f1;
   border: none;
   border-radius: 5px;
+  box-shadow: 0 6px 6px -6px grey;
   font-size: 0.9em;
   height: 50px;
   padding: 12px;
@@ -537,6 +538,7 @@ body {
   background-color: #eff0f1;
   border: none;
   border-radius: 5px;
+  box-shadow: 0 6px 6px -6px grey;
   height: 100px;
   width: 100%;
 }

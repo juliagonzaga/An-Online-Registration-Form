@@ -58,6 +58,7 @@
     background-color: $color-solitude;
     border: none;
     border-radius: $round;
+    box-shadow: 0 6px 6px -6px grey;
     @content; 
 }
 
